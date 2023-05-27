@@ -10,8 +10,20 @@ html{
 }
 
 /* styles */
-
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
 svg{
     height: 25px;
     width: 25px;
+}
+
+nav{
+    background-color: blue;
+}
+
+.main{
+    background-color: red;
 }
