@@ -8,3 +8,10 @@ html{
     margin: 0;
     padding: 0;
 }
+
+/* styles */
+
+svg{
+    height: 25px;
+    width: 25px;
+}
