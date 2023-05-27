@@ -43,3 +43,13 @@ ul{
     flex-direction: column;
     gap: 100px;
 }
+
+.close{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close > svg:hover{
+    fill: white;
+    cursor: pointer;
+}
