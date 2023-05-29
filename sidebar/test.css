@@ -4,7 +4,6 @@
 
 body{
     margin: 0;
-    padding: 0;
 }
 
 ul{
@@ -17,6 +16,41 @@ a{
 
 :root{
     --bar-width:60px;
-    --bar-height:8px;
+    --bar-height:6px;
     --hamburger-gap:6px;
+    --foreground:#333;
+    --background:white;
+    --hamburger-margin:6px;
+}
+
+.toggle{
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.toggle::before,
+.toggle::after,
+.toggle input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+}.toggle input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: noen;
+    pointer-events: none;
+}
+
+.toggle input:checked{
+
 }
