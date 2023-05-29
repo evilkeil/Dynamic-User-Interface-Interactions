@@ -61,7 +61,20 @@ ul{
     width: 0;
 }
 
-.icon {
+
+
+  .icon {
+    position: relative;
+  }
+  
+  .icon .open {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .icon .close {
     position: absolute;
     top: 5px;
     left: 5px;
