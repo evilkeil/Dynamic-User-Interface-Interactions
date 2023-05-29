@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html,body{
+body{
     margin: 0;
     padding: 0;
 }
@@ -13,4 +13,10 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+:root{
+    --bar-width:60px;
+    --bar-height:8px;
+    --hamburger-gap:6px;
 }
