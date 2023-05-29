@@ -105,7 +105,10 @@ a{
 .sidebar a{
     color: var(--background);
 }
-
+.toggle:has(input:checked){
+    --foreground:white;
+    --background:#333;
+}
 .toggle:has(input:checked) + .sidebar{
     translate: 0;
 }
