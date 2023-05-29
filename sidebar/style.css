@@ -53,3 +53,9 @@ ul{
     fill: white;
     cursor: pointer;
 }
+
+/* animations */
+
+.closing{
+    width: 0;
+}
