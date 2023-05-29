@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
+html,body{
+    overflow: hidden;
+}
 body{
     margin: 0;
     padding: 0;
+    background-color: red;
 }
 
 /* styles */
 body{
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 6fr;
+    width: 100vw;
+    
     color: white;
 }
 svg{
@@ -22,14 +26,30 @@ svg{
 }
 
 nav{
+    position: fixed;
     background-color: blue;
     display: grid;
+    width: 10%;
+    height: 100%;
+    /* transform: translate(-300px); */
     
     
 }
 
 .main{
-    background-color: red;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.main > p{
+    width: 500px;
+    height: 370px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 a{
