@@ -119,3 +119,23 @@ a{
     border: 1px solid var(--background);
     box-shadow: 0 0 0 1px var(--foreground);
 }
+
+
+/* styles for main  */
+body{
+    display: flex;
+}
+.main{
+
+    display: grid;
+    place-content: center;
+    flex: 1;
+}
+
+.main>p{
+    width: 500px;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    border: 1px solid black;
+}
