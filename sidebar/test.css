@@ -75,9 +75,10 @@ a{
 }
 
 .sidebar{
+    transition: translate var(--animation-timing);
     padding: 0.5 1rem;
     position: fixed;
-    /* translate: -100%; */
+    translate: -100%;
     padding-top: calc(var(--hamburger-height)+ var(--hamburger-margin) + 1rem);
     background-color: var(--foreground);
     color: var(--background);
@@ -103,4 +104,8 @@ a{
 
 .sidebar a{
     color: var(--background);
+}
+
+.toggle:has(input:checked) + .sidebar{
+    translate: 0;
 }
