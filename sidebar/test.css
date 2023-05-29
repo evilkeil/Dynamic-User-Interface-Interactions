@@ -77,7 +77,7 @@ a{
 .sidebar{
     transition: translate var(--animation-timing);
     padding: 0.5 1rem;
-    position: fixed;
+   
     translate: -100%;
     padding-top: calc(var(--hamburger-height)+ var(--hamburger-margin) + 1rem);
     background-color: var(--foreground);
@@ -111,4 +111,11 @@ a{
 }
 .toggle:has(input:checked) + .sidebar{
     translate: 0;
+}
+
+.toggle:has(input:focus-visible)::before,
+.toggle:has(input:focus-visible)::after,
+.toggle input:focus-visible{
+    border: 1px solid var(--background);
+    box-shadow: 0 0 0 1px var(--foreground);
 }
