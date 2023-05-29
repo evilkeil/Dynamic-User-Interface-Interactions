@@ -29,7 +29,7 @@ nav{
     position: fixed;
     background-color: blue;
     display: grid;
-    width: 10%;
+    width: 250px;
     height: 100%;
     /* transform: translate(-300px); */
     
@@ -98,4 +98,13 @@ ul{
     position: absolute;
     top: 5px;
     left: 5px;
+  }
+
+  nav{
+    transform: translate(-250px);
+    transition: transform ;
+  }
+
+  .nav .sidebar-open{
+    transform: translate(0) ;
   }

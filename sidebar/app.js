@@ -1,9 +1,6 @@
 const icon = document.querySelector('.icon');
+const nav = document.querySelector('nav');
 
 icon.addEventListener('click', function() {
-  const open = icon.querySelector('.open');
-  const close = icon.querySelector('.close');
-  
-  open.style.display = open.style.display === 'none' ? 'block' : 'none';
-  close.style.display = close.style.display === 'none' ? 'block' : 'none';
+    nav.classList.add('.sidebar-open');
 });
