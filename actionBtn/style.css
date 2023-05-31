@@ -38,23 +38,24 @@ a,a:hover,a:visited{
     border-radius: 50%;
     display: grid;
     place-content: center;
+    transition: transform var(--animation-timing);
 }
-.home{
+.home-animation{
     transform: translate(10px, -150px);
     }
 
-.profile{
+.profile-animation{
     transform: translate(-70px, -190px);
 }
 
-.community{
+.community-animation{
     transform: translate(-120px, -190px);
 }
 
-.explore{
+.explore-animation{
     transform: translate(-135px, -180px);
 }
 
-.friends{
+.friends-animation{
     transform: translate(-120px, -170px);
 }
