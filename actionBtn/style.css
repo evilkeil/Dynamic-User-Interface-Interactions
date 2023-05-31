@@ -39,23 +39,29 @@ a,a:hover,a:visited{
     display: grid;
     place-content: center;
     transition: transform var(--animation-timing);
+    display: none;
 }
 .home-animation{
     transform: translate(10px, -150px);
+    display: block;
     }
 
 .profile-animation{
     transform: translate(-70px, -190px);
+    display: block;
 }
 
 .community-animation{
     transform: translate(-120px, -190px);
+    display: block;
 }
 
 .explore-animation{
     transform: translate(-135px, -180px);
+    display: block;
 }
 
 .friends-animation{
     transform: translate(-120px, -170px);
+    display: block;
 }
