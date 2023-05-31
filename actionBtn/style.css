@@ -31,6 +31,10 @@ a,a:hover,a:visited{
     bottom: 135px;
     right: 200px;
 }
+.menu{
+    transition: transform var(--animation-timing);
+    pointer-events: none;
+}
 .nav{
     background-color: green;
     width: 80px;
@@ -38,7 +42,6 @@ a,a:hover,a:visited{
     border-radius: 50%;
     display: grid;
     place-content: center;
-    transition: transform var(--animation-timing);
     display: none;
 }
 .home-animation{
