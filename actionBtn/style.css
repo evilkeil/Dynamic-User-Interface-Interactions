@@ -48,14 +48,12 @@ a,a:hover,a:visited{
     display: none;
 }
 .home-grow{
-    transform: translate(10px, -150px);
-    display: grid;
-    place-content: center;
+    animation: homeGrow var(--animation-timing) forwards;
+    animation-timing-function: ease-in-out;
     }
 .home-shrink{
-    transform: translate(10px, -150px);
-    display: grid;
-    place-content: center;
+    animation: homeShrink var(--animation-timing) forwards;
+    animation-timing-function: ease-in-out
     }
 
 .profile-grow{
@@ -105,7 +103,7 @@ a,a:hover,a:visited{
 
 /* keyframes */
 
-@keyframes home-animation {
+@keyframes homeGrow {
     
     from {
       transform: translate(0, 0);
@@ -114,3 +112,12 @@ a,a:hover,a:visited{
       transform: translate(10px, -150px);
     }
   }
+@keyframes homeShrink {
+
+from {
+    transform: translate(0, 0);
+}
+to {
+    transform: translate(10px, -150px);
+}
+}
