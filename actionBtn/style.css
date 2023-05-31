@@ -35,6 +35,9 @@ a,a:hover,a:visited{
     transition: transform var(--animation-timing);
     pointer-events: none;
 }
+.trigger{
+    cursor: pointer;
+}
 .nav{
     background-color: green;
     width: 80px;
@@ -46,25 +49,30 @@ a,a:hover,a:visited{
 }
 .home-animation{
     transform: translate(10px, -150px);
-    display: block;
+    display: grid;
+    place-content: center;
     }
 
 .profile-animation{
     transform: translate(-70px, -190px);
-    display: block;
+    display: grid;
+    place-content: center;
 }
 
 .community-animation{
     transform: translate(-120px, -190px);
-    display: block;
+    display: grid;
+    place-content: center;
 }
 
 .explore-animation{
     transform: translate(-135px, -180px);
-    display: block;
+    display: grid;
+    place-content: center;
 }
 
 .friends-animation{
     transform: translate(-120px, -170px);
-    display: block;
+    display: grid;
+    place-content: center;
 }
