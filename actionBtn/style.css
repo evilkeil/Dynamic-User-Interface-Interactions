@@ -23,14 +23,16 @@ a,a:hover,a:visited{
     border-radius: 50%;
     background-color: red;
     /* overflow: hidden; */
-    bottom: 120px;
+    bottom: 135px;
     right: 200px;
 }
 .nav{
     background-color: green;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    display: grid;
+    place-content: center;
 }
 .home{
     transform: translate(10px, -150px);
@@ -45,7 +47,7 @@ a,a:hover,a:visited{
 }
 
 .explore{
-    transform: translate(-150px, -180px);
+    transform: translate(-135px, -180px);
 }
 
 .friends{
