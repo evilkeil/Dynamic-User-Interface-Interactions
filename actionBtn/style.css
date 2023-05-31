@@ -16,7 +16,7 @@ a,a:hover,a:visited{
 }
 
 :root{
-    --animation-timing:200ms ease-in-out;
+    --animation-timing:200ms;
 }
 
 /* styles */
@@ -47,32 +47,70 @@ a,a:hover,a:visited{
     place-content: center;
     display: none;
 }
-.home-animation{
+.home-grow{
+    transform: translate(10px, -150px);
+    display: grid;
+    place-content: center;
+    }
+.home-shrink{
     transform: translate(10px, -150px);
     display: grid;
     place-content: center;
     }
 
-.profile-animation{
+.profile-grow{
     transform: translate(-70px, -190px);
     display: grid;
     place-content: center;
 }
 
-.community-animation{
+.profile-shrink{
+    transform: translate(-70px, -190px);
+    display: grid;
+    place-content: center;
+}
+
+.community-grow{
+    transform: translate(-120px, -190px);
+    display: grid;
+    place-content: center;
+}
+.community-shrink{
     transform: translate(-120px, -190px);
     display: grid;
     place-content: center;
 }
 
-.explore-animation{
+.explore-grow{
+    transform: translate(-135px, -180px);
+    display: grid;
+    place-content: center;
+}
+.explore-shrink{
     transform: translate(-135px, -180px);
     display: grid;
     place-content: center;
 }
 
-.friends-animation{
+.friends-grow{
     transform: translate(-120px, -170px);
     display: grid;
     place-content: center;
 }
+.friends-grow{
+    transform: translate(-120px, -170px);
+    display: grid;
+    place-content: center;
+}
+
+/* keyframes */
+
+@keyframes home-animation {
+    
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(10px, -150px);
+    }
+  }
