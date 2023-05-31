@@ -45,79 +45,41 @@ a,a:hover,a:visited{
     border-radius: 50%;
     display: grid;
     place-content: center;
-    display: none;
+    visibility: hidden;
 }
-.home-grow{
+
+.home-grow {
     animation: homeGrow var(--animation-timing) forwards;
     animation-timing-function: ease-in-out;
-    }
-.home-shrink{
+}
+
+.home-shrink {
     animation: homeShrink var(--animation-timing) forwards;
-    animation-timing-function: ease-in-out
-    }
-
-.profile-grow{
-    transform: translate(-70px, -190px);
-    display: grid;
-    place-content: center;
+    animation-timing-function: ease-in-out;
 }
-
-.profile-shrink{
-    transform: translate(-70px, -190px);
-    display: grid;
-    place-content: center;
-}
-
-.community-grow{
-    transform: translate(-120px, -190px);
-    display: grid;
-    place-content: center;
-}
-.community-shrink{
-    transform: translate(-120px, -190px);
-    display: grid;
-    place-content: center;
-}
-
-.explore-grow{
-    transform: translate(-135px, -180px);
-    display: grid;
-    place-content: center;
-}
-.explore-shrink{
-    transform: translate(-135px, -180px);
-    display: grid;
-    place-content: center;
-}
-
-.friends-grow{
-    transform: translate(-120px, -170px);
-    display: grid;
-    place-content: center;
-}
-.friends-grow{
-    transform: translate(-120px, -170px);
-    display: grid;
-    place-content: center;
-}
-
-/* keyframes */
 
 @keyframes homeGrow {
-    
     from {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 0;
+        visibility: hidden;
     }
     to {
-      transform: translate(10px, -150px);
+        transform: translate(10px, -150px);
+        opacity: 1;
+        visibility: visible;
     }
-  }
-@keyframes homeShrink {
+}
 
-from {
-    transform: translate(0, 0);
-}
-to {
-    transform: translate(10px, -150px);
-}
+@keyframes homeShrink {
+    from {
+        transform: translate(10px, -150px);
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 0;
+        visibility: hidden;
+    }
 }
