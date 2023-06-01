@@ -121,3 +121,42 @@ animation-timing-function: ease-in-out;
         visibility: hidden;
     }
 }
+
+/* animations for community */
+
+.community-grow{
+    animation: communityGrow var(--animation-timing) forwards;
+    animation-timing-function: ease-in-out;
+
+}
+
+.community-shrink{
+    animation: communityShrink var(--animation-timing) forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes communityGrow{
+    from{
+        transform: translate(0,0);
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        transform: translate(-120px, -190px); 
+        opacity: 1;
+        visibility:visible ;
+    }
+}
+
+@keyframes communityShrink{
+    from{
+        transform: translate(-120px, -190px);
+        opacity: 1;
+        visibility: visible;
+    }
+    to{
+        transform: translate(0,0);
+        opacity: 0;
+        visibility:hidden ;
+    }
+}
