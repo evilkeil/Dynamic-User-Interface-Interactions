@@ -47,7 +47,7 @@ a,a:hover,a:visited{
     place-content: center;
     visibility: hidden;
 }
-
+/* animations for home */
 .home-grow {
     animation: homeGrow var(--animation-timing) forwards;
     animation-timing-function: ease-in-out;
@@ -74,6 +74,44 @@ a,a:hover,a:visited{
 @keyframes homeShrink {
     from {
         transform: translate(10px, -150px);
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* animations for profile */
+
+.profile-grow{
+animation: profileGrow var(--animation-timing) forwards;
+animation-timing-function: ease-in-out;
+}
+
+.profile-shrink{
+animation: profileShrink var(--animation-timing) forwards;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes profileGrow {
+    from {
+        transform: translate(0, 0);
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        transform: translate(-70px, -190px);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes profileShrink {
+    from {
+        transform: translate(-70px, -190px);
         opacity: 1;
         visibility: visible;
     }
