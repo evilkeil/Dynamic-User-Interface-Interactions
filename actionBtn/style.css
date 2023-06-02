@@ -202,12 +202,12 @@ animation-timing-function: ease-in-out;
 /* animations for friends */
 
 .friends-grow{
-    animation: friendsGrow var(--animation-timing) ease-in-out;
+    animation: friendsGrow var(--animation-timing) forwards;
     animation-timing-function:ease-in-out ;
 }
 
 .friends-shrink{
-    animation: friendsShrink var(--animation-timing) ease-in-out;
+    animation: friendsShrink var(--animation-timing) forwards;
     animation-timing-function:ease-in-out ;
 }
 
