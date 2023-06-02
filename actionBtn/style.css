@@ -160,3 +160,41 @@ animation-timing-function: ease-in-out;
         visibility:hidden ;
     }
 }
+
+/* explore animations */
+
+.explore-grow{
+    animation: exploreGrow var(--animation-timing) forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.explore-grow{
+    animation: exploreShrink var(--animation-timing) forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes exploreGrow {
+    from{
+        transform: translate(0,0);
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+         transform: translate(-135px, -180px);
+         visibility: visible;
+         opacity: 1;
+    }
+}
+
+@keyframes exploreShrink {
+    from{
+        transform: translate(-135px, -180px);
+        visibility: visible;
+        opacity: 1;
+    }
+    to{
+        transform: translate(0,0);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
