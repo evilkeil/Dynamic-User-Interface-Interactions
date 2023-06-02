@@ -198,3 +198,42 @@ animation-timing-function: ease-in-out;
         opacity: 0;
     }
 }
+
+/* animations for friends */
+
+.friends-grow{
+    animation: friendsGrow var(--animation-timing) ease-in-out;
+    animation-timing-function:ease-in-out ;
+}
+
+.friends-shrink{
+    animation: friendsShrink var(--animation-timing) ease-in-out;
+    animation-timing-function:ease-in-out ;
+}
+
+
+@keyframes friendsGrow {
+    from{
+        transform: translate(0,0);
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        transform: translate(-120px, -170px);
+         visibility: visible;
+         opacity: 1;
+    }
+}
+
+@keyframes friendsShrink {
+    from{
+        transform: translate(-120px, -170px);
+        visibility: visible;
+        opacity: 1;
+    }
+    to{
+        transform: translate(0,0);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
