@@ -3,6 +3,7 @@ const home = document.querySelector('.home');
 const profile = document.querySelector('.profile');
 const community = document.querySelector('.community');
 const explore = document.querySelector('.explore');
+const friends = document.querySelector('.friends');
 
 function action() {
     if (trigger.classList.contains('clicked')) {
@@ -15,6 +16,8 @@ function action() {
         community.classList.add('community-shrink');
         explore.classList.remove('explore-grow');
         explore.classList.add('explore-shrink');
+        friends.classList.remove('friends-grow');
+        friends.classList.add('friends-shrink');
     } else {
         trigger.classList.add('clicked');
         home.classList.add('home-grow');
@@ -25,6 +28,8 @@ function action() {
         community.classList.remove('community-shrink');
         explore.classList.add('explore-grow');
         explore.classList.remove('explore-shrink');
+        friends.classList.add('friends-grow');
+        friends.classList.remove('friends-shrink');
     }
 }
 
