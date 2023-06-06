@@ -11,3 +11,9 @@ img{
     width: 700px;
     height: 400px;
 }
+
+.frame{
+    width: 700px;
+    height: 400px;
+    overflow: hidden; 
+}
