@@ -9,6 +9,9 @@ body{
     display: grid;
     place-content: center;
 }
+:root{
+    --animation-timing:200ms;
+}
 
 img{
     width: 700px;
